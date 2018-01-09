@@ -1,0 +1,3 @@
+var Hero = {
+title : "Batman"
+};
