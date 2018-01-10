@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="lib/traceur.js"></script>
+    <script src="lib/BrowserSystem.js"></script>
+    <script src="lib/bootstrap.js"></script>
+    <script type="module">
+        /*
+        var Hero = {
+            title : "Ironman",
+            power : 7
+        };
+        var heroTitle = Hero.title;
+        var heroPower = Hero.power;
+        */
+
+        /*
+        var Hero = {
+            title : "Ironman",
+            power : 7
+        };
+        
+        // let {title : heroTitle, power : heroPower} = Hero;
+        // console.log(heroTitle);
+        
+        let {title, power:hpower} = Hero;
+        console.log(title);
+        console.log(hpower);
+        */
+         var Hero = ["Ironman","Batman","Antman"];
+         let [fhero,shero,thero] = Hero;
+         console.log(fhero);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

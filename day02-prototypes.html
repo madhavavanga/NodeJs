@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Prototype</title>
+    <script>
+        var Hero = function(fn, ln){
+            this.firstName = fn;
+            this.lastName = ln;
+            /*
+            this.fullName = function(){
+                return this.firstName+" "+this.lastName;
+            };
+            */
+        };
+        Hero.prototype.fullName = function(){
+                return this.firstName+" "+this.lastName;
+        };
+        
+        var comicHero = new Hero("Peter", "Parker");
+            console.warn(comicHero.firstName, comicHero.lastName);
+            console.error(comicHero.fullName());
+
+        var filmHero = new Hero("Rajani", "Kanth");
+            console.warn(filmHero.firstName, filmHero.lastName);
+            console.error(filmHero.fullName());
+
+        console.log("+++++++++++++++++++++++++++++++");
+        console.log(comicHero.fullName === filmHero.fullName);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Closures</title>
+    <script>
+        var myFun = function(uname){
+            var secret = "My Secret";
+            var userName = uname;
+            var somefun = function(num){
+               var elm = "";
+               for(let i = 0 ; i < num; i++){
+                elm += "<h1>"+userName+"</h1>";
+               }
+               return elm;
+            };
+            return somefun;
+        };
+
+       var sf = myFun("Superman");
+       window.onload = function(){
+           document
+           .getElementsByTagName("button")[0]
+           .addEventListener("click", function(){
+               document.body.innerHTML += sf(5);
+           })
+       }
+    </script>
+</head>
+<body>
+    <button>Click Me</button>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script>
+        /*
+        function add(num1, num2){
+            var num1 = num1;
+            var num2 = num2 || 0;
+            return num1+num2
+        };
+        console.log(add(5));// 11 
+        */
+
+        /*
+        function add(num1 = 0, num2 = 0){
+            return num1+num2
+        };
+        console.log(add(6));// 11 
+        */
+
+        /*
+        function add(num1 = 0, num2 = 0, ...nums ){
+            var tot = num1+num2;
+            for(let i = 0; i < nums.length ; i++){
+                tot += nums[i]
+            };
+            return tot;
+        };
+        console.log(add(6,5,7,8));// 11 
+        */
+
+        let dawnofjustice = ["Batman","Superman","Wonder Women"];
+        let powers = [5,6,7];
+       // console.log(dawnofjustice);
+        let justiceleague = ["Aquaman", ...dawnofjustice, "Flash"]
+       // console.log(justiceleague);
+        function totalpower(num1,num2,num3){
+            return num1+num2+num3
+        }
+        console.log(totalpower(...powers));
+        </script>
+</head>
+<body>
+    
+</body>
+</html>

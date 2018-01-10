@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classes</title>
+    <script src="lib/traceur.js"></script>
+    <script src="lib/BrowserSystem.js"></script>
+    <script src="lib/bootstrap.js"></script>
+    <script type="module">
+
+        import { Hero, Company } from "mods/Hero.js";
+
+        var comicHero = new Hero("Hulk");
+        var myco = new Company();
+        console.warn(myco.getHeadCount())
+        console.log(comicHero.firstname);
+        console.log(comicHero.sayname());
+        console.log(comicHero.secret );
+        comicHero.secret = "Lets Take a Break....";
+        console.log(comicHero.secret );
+        console.log(Hero.defaultCity());
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoisting</title>
+    <script>
+        var myfun = undefined;
+        var user = undefined;
+        if("user" in window){
+            console.log("exists", user);
+
+        }else{
+            console.log("do not exists")
+        }
+
+        user = "Batman";
+        /*
+        function myfun(){
+
+        };
+        */
+        myfun = function(){
+
+        };
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

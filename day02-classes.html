@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Classes</title>
+    <script>
+        class Hero {
+            constructor(fn){
+                this.firstname = fn;
+                this._secret = "My Secret";
+            }
+            static defaultCity(){
+                return "Bangalore";
+            }
+            sayname(){
+                return "My Name is "+this.firstname
+            }
+            set secret(newsecret){
+                this._secret = newsecret;
+            }
+            get secret(){
+                return this._secret;
+            }
+        };
+
+        var comicHero = new Hero("Hulk");
+        console.log(comicHero.firstname);
+        console.log(comicHero.sayname());
+        console.log(comicHero.secret );
+        comicHero.secret = "Lets Take a Break....";
+        console.log(comicHero.secret );
+        console.log(Hero.defaultCity());
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

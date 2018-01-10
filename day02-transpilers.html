@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="lib/traceur.js"></script>
+    <script src="lib/BrowserSystem.js"></script>
+    <script src="lib/bootstrap.js"></script>
+    <script type="module">
+        // window.onload = ()=> alert("hello everyone");
+        window.onload = ()=> {
+            document.querySelector("button")
+            .addEventListener("click", function(){
+                // alert("you clicked a button");
+                document.querySelector(".box").innerHTML = 
+                `
+                <h1> It is a long established fact that a reader 
+                will be distracted by the readable content of a
+                 page when looking at its layout. The point of 
+                 using Lorem Ipsum is that it has a more-or-less 
+                 normal distribution of letters, as opposed to using 
+                 'Content here, content here', making it look like 
+                 readable English. Many desktop publishing packages 
+                 and web page editors now use Lorem Ipsum as their 
+                 default model text, and a search for 'lorem ipsum' 
+                 will uncover many web sites still in their infancy. 
+                 Various versions have evolved over the years, sometimes 
+                 by accident, sometimes on purpose 
+                 (injected humour and the like).</h1>`
+            })
+        };
+    </script>
+</head>
+<body>
+    <button>Click Me</button>
+    <div class="box"></div>
+</body>
+</html>
